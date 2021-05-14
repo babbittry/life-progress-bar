@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
     hide_border,
     line_height,
     text_color,
-    bg_color,
+    bg_color, 
     theme,
     cache_seconds,
     hide_title,
