@@ -12,39 +12,7 @@ const noCodingActivityNode = ({ color, text }) => {
   `;
 };
 
-const createCompactLangNode = ({ lang, totalSize, x, y }) => {
-  const color = languageColors[lang.name] || "#858585";
 
-  return `
-    <g transform="translate(${x}, ${y})">
-      <circle cx="5" cy="6" r="5" fill="${color}" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        ${lang.name} - ${lang.text}
-      </text>
-    </g>
-  `;
-};
-
-const createLanguageTextNode = ({ langs, totalSize, x, y }) => {
-  return langs.map((lang, index) => {
-    if (index % 2 === 0) {
-      return createCompactLangNode({
-        lang,
-        x: 25,
-        y: 12.5 * index + y,
-        totalSize,
-        index,
-      });
-    }
-    return createCompactLangNode({
-      lang,
-      x: 230,
-      y: 12.5 + 12.5 * index,
-      totalSize,
-      index,
-    });
-  });
-};
 
 const createTextNode = ({
   id,
@@ -160,50 +128,6 @@ const renderWakatimeCard = (stats = {}, options = { hide: [] }) => {
 
   let width = 440;
 
-  // RENDER COMPACT LAYOUT
-  if (layout === "compact") {
-    width = width + 50;
-    height = 90 + Math.round(languages.length / 2) * 25;
-
-    // progressOffset holds the previous language's width and used to offset the next language
-    // so that we can stack them one after another, like this: [--][----][---]
-    let progressOffset = 0;
-    const compactProgressBar = languages
-      .map((lang) => {
-        // const progress = (width * lang.percent) / 100;
-        const progress = ((width - 25) * lang.percent) / 100;
-
-        const languageColor = languageColors[lang.name] || "#858585";
-
-        const output = `
-          <rect
-            mask="url(#rect-mask)"
-            data-testid="lang-progress"
-            x="${progressOffset}"
-            y="0"
-            width="${progress}"
-            height="8"
-            fill="${languageColor}"
-          />
-        `;
-        progressOffset += progress;
-        return output;
-      })
-      .join("");
-
-    finalLayout = `
-      <mask id="rect-mask">
-      <rect x="25" y="0" width="${width - 50}" height="8" fill="white" rx="5" />
-      </mask>
-      ${compactProgressBar}
-      ${createLanguageTextNode({
-        x: 0,
-        y: 25,
-        langs: languages,
-        totalSize: 100,
-      }).join("")}
-    `;
-  } else {
     finalLayout = flexLayout({
       items: statItems.length
         ? statItems
@@ -216,7 +140,7 @@ const renderWakatimeCard = (stats = {}, options = { hide: [] }) => {
       gap: lheight,
       direction: "column",
     }).join("");
-  }
+  
 
   const card = new Card({
     customTitle: custom_title,

@@ -2,63 +2,63 @@ const { getAnimations } = require("../getStyles");
 const { flexLayout, encodeHTML } = require("../common/utils");
 
 class Card {
-  constructor({
-    width = 100,
-    height = 100,
-    border_radius = 4.5,
-    colors = {},
-    customTitle,
-    defaultTitle = "",
-    titlePrefixIcon,
-  }) {
-    this.width = width;
-    this.height = height;
+    constructor({
+        width = 100,
+        height = 100,
+        border_radius = 4.5,
+        colors = {},
+        customTitle,
+        defaultTitle = "",
+        titlePrefixIcon,
+    }) {
+        this.width = width;
+        this.height = height;
 
-    this.hideBorder = false;
-    this.hideTitle = false;
+        this.hideBorder = false;
+        this.hideTitle = false;
 
-    this.border_radius = border_radius;
+        this.border_radius = border_radius;
 
-    // returns theme based colors with proper overrides and defaults
-    this.colors = colors;
-    this.title =
-      customTitle !== undefined
-        ? encodeHTML(customTitle)
-        : encodeHTML(defaultTitle);
+        // returns theme based colors with proper overrides and defaults
+        this.colors = colors;
+        this.title =
+            customTitle !== undefined
+                ? encodeHTML(customTitle)
+                : encodeHTML(defaultTitle);
 
-    this.css = "";
+        this.css = "";
 
-    this.paddingX = 25;
-    this.paddingY = 35;
-    this.titlePrefixIcon = titlePrefixIcon;
-    this.animations = true;
-  }
-
-  disableAnimations() {
-    this.animations = false;
-  }
-
-  setCSS(value) {
-    this.css = value;
-  }
-
-  setHideBorder(value) {
-    this.hideBorder = value;
-  }
-
-  setHideTitle(value) {
-    this.hideTitle = value;
-    if (value) {
-      this.height -= 30;
+        this.paddingX = 25;
+        this.paddingY = 35;
+        this.titlePrefixIcon = titlePrefixIcon;
+        this.animations = true;
     }
-  }
 
-  setTitle(text) {
-    this.title = text;
-  }
+    disableAnimations() {
+        this.animations = false;
+    }
 
-  renderTitle() {
-    const titleText = `
+    setCSS(value) {
+        this.css = value;
+    }
+
+    setHideBorder(value) {
+        this.hideBorder = value;
+    }
+
+    setHideTitle(value) {
+        this.hideTitle = value;
+        if (value) {
+            this.height -= 30;
+        }
+    }
+
+    setTitle(text) {
+        this.title = text;
+    }
+
+    renderTitle() {
+        const titleText = `
       <text
         x="0"
         y="0"
@@ -67,7 +67,7 @@ class Card {
       >${this.title}</text>
     `;
 
-    const prefixIcon = `
+        const prefixIcon = `
       <svg
         class="icon"
         x="0"
@@ -80,42 +80,42 @@ class Card {
         ${this.titlePrefixIcon}
       </svg>
     `;
-    return `
+        return `
       <g
         data-testid="card-title"
         transform="translate(${this.paddingX}, ${this.paddingY})"
       >
         ${flexLayout({
-          items: [this.titlePrefixIcon && prefixIcon, titleText],
-          gap: 25,
+            items: [this.titlePrefixIcon && prefixIcon, titleText],
+            gap: 25,
         }).join("")}
       </g>
     `;
-  }
+    }
 
-  renderGradient() {
-    if (typeof this.colors.bgColor !== "object") return;
+    renderGradient() {
+        if (typeof this.colors.bgColor !== "object") return;
 
-    const gradients = this.colors.bgColor.slice(1);
-    return typeof this.colors.bgColor === "object"
-      ? `
+        const gradients = this.colors.bgColor.slice(1);
+        return typeof this.colors.bgColor === "object"
+            ? `
         <defs>
           <linearGradient
             id="gradient" 
             gradientTransform="rotate(${this.colors.bgColor[0]})"
           >
             ${gradients.map((grad, index) => {
-              let offset = (index * 100) / (gradients.length - 1);
-              return `<stop offset="${offset}%" stop-color="#${grad}" />`;
+                let offset = (index * 100) / (gradients.length - 1);
+                return `<stop offset="${offset}%" stop-color="#${grad}" />`;
             })}
           </linearGradient>
         </defs>
         `
-      : "";
-  }
+            : "";
+    }
 
-  render(body) {
-    return `
+    render(body) {
+        return `
       <svg
         width="${this.width}"
         height="${this.height}"
@@ -132,11 +132,10 @@ class Card {
           ${this.css}
 
           ${process.env.NODE_ENV === "test" ? "" : getAnimations()}
-          ${
-            this.animations === false
-              ? `* { animation-duration: 0s !important; animation-delay: 0s !important; }`
-              : ""
-          }
+          ${this.animations === false
+                ? `* { animation-duration: 0s !important; animation-delay: 0s !important; }`
+                : ""
+            }
         </style>
 
         ${this.renderGradient()}
@@ -149,11 +148,10 @@ class Card {
           height="99%"
           stroke="${this.colors.borderColor}"
           width="${this.width - 1}"
-          fill="${
-            typeof this.colors.bgColor === "object"
-              ? "url(#gradient)"
-              : this.colors.bgColor
-          }"
+          fill="${typeof this.colors.bgColor === "object"
+                ? "url(#gradient)"
+                : this.colors.bgColor
+            }"
           stroke-opacity="${this.hideBorder ? 0 : 1}"
         />
 
@@ -161,15 +159,14 @@ class Card {
 
         <g
           data-testid="main-card-body"
-          transform="translate(0, ${
-            this.hideTitle ? this.paddingX : this.paddingY + 20
-          })"
+          transform="translate(0, ${this.hideTitle ? this.paddingX : this.paddingY + 20
+            })"
         >
           ${body}
         </g>
       </svg>
     `;
-  }
+    }
 }
 
 module.exports = Card;
