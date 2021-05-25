@@ -2,8 +2,8 @@ const { encodeHTML } = require("./common/utils");
 
 const langCardLocales = {
   "langcard.title": {
-    cn: "最常用的语言",
-    en: "Most Used Languages",
+    cn: "人生进度条",
+    en: "Life progress bar",
   },
 };
 
