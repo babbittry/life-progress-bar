@@ -9,7 +9,7 @@
     "theme-readme-gen": "node scripts/generate-theme-doc",
     "preview-theme": "node scripts/preview-theme"
   },
-  "author": "Anurag Hazra",
+  "author": "zxy",
   "license": "MIT",
   "devDependencies": {
     "@actions/core": "^1.2.4",
@@ -24,7 +24,7 @@
     "parse-diff": "^0.7.0"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "emoji-name-map": "^1.2.8",
     "github-username-regex": "^1.0.0",
     "prettier": "^2.1.2",
