@@ -141,7 +141,7 @@ const renderStatsCard = (stats = {}, options = { hide: [] }) => {
     "cn",
     "es",
     "fr",
-    "pt-br",。
+    "pt-br",
     "ru",
     "uk-ua",
     "id",
