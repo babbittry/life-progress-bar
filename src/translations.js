@@ -7,7 +7,7 @@ const langCardLocales = {
   },
 };
 
-const availableLocales = Object.keys(repoCardLocales["repocard.archived"]);
+const availableLocales = Object.keys(langCardLocales["langcard.title"]);
 
 function isLocaleAvailable(locale) {
   return availableLocales.includes(locale.toLowerCase());
