@@ -3,7 +3,7 @@ const { encodeHTML } = require("./common/utils");
 const langCardLocales = {
   "langcard.title": {
     cn: "人生进度条",
-    en: "Life progress bar",
+    en: "Life Progress Bar",
   },
 };
 
