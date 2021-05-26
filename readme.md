@@ -39,22 +39,7 @@
   </p>
 
 </p>
-<p align="center">Love the project? Please consider <a href="https://www.paypal.me/anuraghazra">donating</a> to help it improve!
 
-
-<p>
-<a href="https://indiafightscorona.giveindia.org">
-<img src="https://d2wvdrxmr8p0wf.cloudfront.net/static/giveindia.svg" alt="Give india logo" width="200" />
-</a>
-
-Are you considering to support the project by donating to me? Please DON'T!!  
-
-Instead, Help India fight 2nd deadly wave of COVID,  
-Thousands of people are dying in India for lack of Oxygen & COVID related necessary infrastructure.  
-
-Visit [https://indiafightscorona.giveindia.org](https://indiafightscorona.giveindia.org) and make a small donation to help us fight covid and overcome this crisis.   
-Your small help goes a long way. :heart:
-</p>
 
 
 # Features
@@ -382,24 +367,8 @@ NOTE: Since [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) we
 
 </details>
 
-## :sparkling_heart: Support the project
-
-I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously,
-this takes time. You can use this service for free.
-
-However, if you are using this project and are happy with it or just want to encourage me to continue creating stuff, there are few ways you can do it :-
-
-- Giving proper credit when you use github-readme-stats on your readme, linking back to it :D
-- Starring and sharing the project :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - You can make one-time donations via PayPal. I'll probably buy a ~~coffee~~ tea. :tea:
-
-Thanks! :heart:
 
 ---
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](./powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-
-Contributions are welcome! <3
-
-Made with :heart: and JavaScript.

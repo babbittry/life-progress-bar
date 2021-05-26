@@ -34,28 +34,11 @@
     <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">请求增加功能</a>
   </p>
   <p align="center">
-    <a href="/docs/readme_fr.md">Français</a>
+    <a href="readme.md">English</a>
     ·
     <a href="/docs/readme_cn.md">简体中文</a>
-    ·
-    <a href="/docs/readme_es.md">Español</a>
-    ·
-    <a href="/docs/readme_de.md">Deutsch</a>
-    ·
-    <a href="/docs/readme_ja.md">日本語</a>
-    ·
-    <a href="/docs/readme_pt-BR.md">Português Brasileiro</a>
-    ·
-    <a href="/docs/readme_it.md">Italiano</a>
-    ·
-    <a href="/docs/readme_kr.md">한국어</a>
-    .
-    <a href="/docs/readme_nl.md">Nederlands</a>
-    .
-    <a href="/docs/readme_np.md">नेपाली</a>
   </p>
 </p>
-<p align="center">喜欢这个项目？请考虑<a href="https://www.paypal.me/anuraghazra">捐赠</a>来帮助它完善！
 
 # 特性
 
@@ -317,22 +300,7 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 
 </details>
 
-## :sparkling_heart: 支持这个项目
-
-我尽己所能地进行开源，并且我尽量回复每个在使用项目时需要帮助的人。很明显，这需要时间，但你可以免费享受这些。
-
-然而, 如果你正在使用这个项目并感觉良好，或只是想要支持我继续开发，你可以通过如下方式：
-
-- 在你的 readme 中使用 github-readme-stats 时，链接指向这里 :D
-- Star 并 分享这个项目 :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - 你可以通过 PayPal 一次性捐款. 我多半会买一杯 ~~咖啡~~ 茶. :tea:
-
-谢谢！ :heart:
-
 ---
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-欢迎贡献！ <3
-
-用 :heart: 发电，用 JavaScript 制作。
