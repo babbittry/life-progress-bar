@@ -34,6 +34,8 @@ const fetcher = (variables, token) => {
     );
 };
 
+
+// exclude 排除
 async function fetchTopLanguages(username, exclude_repo = []) {
     if (!username) throw Error("Invalid username");
 
