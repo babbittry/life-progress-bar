@@ -41,6 +41,8 @@ function isValidHexColor(hexColor) {
   ).test(hexColor);
 }
 
+
+// parse 解析
 function parseBoolean(value) {
   if (value === "true") {
     return true;
