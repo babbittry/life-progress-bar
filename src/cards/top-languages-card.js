@@ -64,7 +64,6 @@ const renderTopLanguages = (topLangs, options = {}) => {
 
     // filter out langauges to be hidden
     langs = langs
-        .sort((a, b) => b.size - a.size)
         .filter((lang) => {
             return !langsToHide[lowercaseTrim(lang.name)];
         })
