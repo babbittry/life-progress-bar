@@ -50,6 +50,9 @@ module.exports = async (req, res) => {
             parseArray(hide),
         );
 
+        console.log(topLangs);    
+
+
         const cacheSeconds = clampValue(
             parseInt(cache_seconds || CONSTANTS.TWO_HOURS, 10),
             CONSTANTS.TWO_HOURS,
