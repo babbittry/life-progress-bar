@@ -5,7 +5,7 @@ require("dotenv").config();
 // exclude 排除
 async function fetchTopLanguages(username, exclude_repo = []) {
 
-    let repoNodes = res.data.data.user.repositories.nodes;
+    // let repoNodes = res.data.data.user.repositories.nodes;
 
 
 /*     const topLangs = Object.keys(repoNodes)
