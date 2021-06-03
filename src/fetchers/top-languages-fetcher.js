@@ -2,8 +2,7 @@ const retryer = require("../common/retryer");
 require("dotenv").config();
 
 
-// exclude 排除
-async function fetchTopLanguages(username, exclude_repo = []) {
+async function fetchTopLanguages(username) {
 
     // let repoNodes = res.data.data.user.repositories.nodes;
 
