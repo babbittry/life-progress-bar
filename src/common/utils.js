@@ -230,7 +230,6 @@ module.exports = {
   kFormatter,
   encodeHTML,
   isValidHexColor,
-  request,
   parseArray,
   parseBoolean,
   fallbackColor,
