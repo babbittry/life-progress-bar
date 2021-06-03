@@ -76,17 +76,6 @@ To hide any specific stats, you can pass a query parameter `?hide=` with comma-s
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,prs)
 ```
 
-### Adding private contributions count to total commits count
-
-You can add the count of all your private contributions to the total commits count by using the query parameter `?count_private=true`.
-
-_Note: If you are deploying this project yourself, the private contributions will be counted by default otherwise you need to chose to share your private contribution counts._
-
-> Options: `&count_private=true`
-
-```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&count_private=true)
-```
 
 ### Showing icons
 
@@ -148,7 +137,6 @@ You can provide multiple comma-separated values in bg_color option to render a g
 - `hide_rank` - _(boolean)_ hides the rank and automatically resizes the card width
 - `show_icons` - _(boolean)_
 - `include_all_commits` - Count total commits instead of just the current year commits _(boolean)_
-- `count_private` - Count private commits _(boolean)_
 - `line_height` - Sets the line-height between text _(number)_
 - `custom_title` - Sets a custom title for the card
 - `disable_animations` - Disables all animations in the card _(boolean)_

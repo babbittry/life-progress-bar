@@ -65,23 +65,12 @@ _注: 等级基于用户的统计信息计算得出，详见 [src/calculateRank.
 
 想要隐藏指定统计信息，你可以调用参数 `?hide=`，其值用 `,` 分隔。
 
-> 选项：`&hide=stars,commits,prs,issues,contribs`
+> 选项：`&hide=day,week,month,year,lifetime`
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,prs)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=day,week)
 ```
 
-### 将私人项目贡献添加到总提交计数中
-
-你可以使用参数 `?count_private=true` 把私人贡献计数添加到总提交计数中。
-
-_注：如果你是自己部署本项目，私人贡献将会默认被计数，如果不是自己部署，你需要分享你的私人贡献计数。_
-
-> 选项: `&count_private=true`
-
-```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&count_private=true)
-```
 
 ### 显示图标
 
@@ -141,7 +130,6 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 - `hide_rank` - _(boolean)_
 - `show_icons` - _(boolean)_
 - `include_all_commits` - 统计总提交次数而不是仅统计今年的提交次数 _(boolean)_
-- `count_private` - 统计私人提交 _(boolean)_
 - `line_height` - 设置文本之间的行高 _(number)_
 
 #### Repo 卡片专属选项:
