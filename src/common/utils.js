@@ -80,6 +80,14 @@ function fallbackColor(color, fallbackColor) {
   );
 }
 
+function request(data, headers) {
+  return axios({
+    url: "https://api.github.com/graphql",
+    method: "post",
+    headers,
+    data,
+  });
+}
 
 /**
  *
@@ -230,6 +238,7 @@ module.exports = {
   kFormatter,
   encodeHTML,
   isValidHexColor,
+  request,
   parseArray,
   parseBoolean,
   fallbackColor,
