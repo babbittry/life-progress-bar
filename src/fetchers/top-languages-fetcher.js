@@ -97,7 +97,31 @@ async function fetchTopLanguages(username, exclude_repo = []) {
             return result;
         }, {});
 
-    return topLangs;
+
+
+
+    
+
+    const lifeTime = {
+        day: {name: 'day', color: 'f1e05a', size: 155},
+        week: {name: 'week', color: '#e34c26', size: 156},
+        month: {name: 'month', color: '#563d7c', size: 5455},
+        year: {name: 'year', color: '#89e051', size : 12},
+        lifetime: {name: 'lifetime', color: '#89e051', size: 1211}
+    };
+
+
+
+
+
+/*      {
+            JavaScript: { name: 'JavaScript', color: '#f1e05a', size: 6342638 },
+            HTML: { name: 'HTML', color: '#e34c26', size: 6289904 },
+            CSS: { name: 'CSS', color: '#563d7c', size: 1683524 },
+            Shell: { name: 'Shell', color: '#89e051', size: 21546 }
+        } */
+
+    return lifeTime;
 }
 
 module.exports = fetchTopLanguages;
