@@ -103,7 +103,7 @@ async function fetchTopLanguages(username, exclude_repo = []) {
     
 
     const lifeTime = {
-        day: {name: 'day', color: 'f1e05a', size: 155},
+        day: {name: 'day', color: '#f1e05a', size: 155},
         week: {name: 'week', color: '#e34c26', size: 136},
         month: {name: 'month', color: '#563d7c', size: 245},
         year: {name: 'year', color: '#89e051', size : 185},
