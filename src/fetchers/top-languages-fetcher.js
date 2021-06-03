@@ -97,8 +97,6 @@ async function fetchTopLanguages(username, exclude_repo = []) {
             return result;
         }, {});
 
-
-    console.log(topLangs);    
     return topLangs;
 }
 
