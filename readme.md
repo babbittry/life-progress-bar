@@ -157,7 +157,7 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 
 ![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra)
 
-- 隐藏指定统计
+- 隐藏指定进度条
 
 ![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&hide=day,week)
 
