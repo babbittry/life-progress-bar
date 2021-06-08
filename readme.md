@@ -56,10 +56,8 @@
 更改 `?username=` 的值为你的 GitHub 用户名。
 
 ```md
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 ```
-
-_注: 等级基于用户的统计信息计算得出，详见 [src/calculateRank.js](../src/calculateRank.js)_
 
 ### 隐藏指定统计
 
@@ -68,16 +66,15 @@ _注: 等级基于用户的统计信息计算得出，详见 [src/calculateRank.
 > 选项：`&hide=day,week,month,year,lifetime`
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=day,week)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&hide=day,week)
 ```
-
 
 ### 显示图标
 
 如果想要显示图标，你可以调用 `show_icons=true` 参数，像这样：
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true)
 ```
 
 ### 主题
@@ -87,7 +84,7 @@ _注: 等级基于用户的统计信息计算得出，详见 [src/calculateRank.
 通过调用 `?theme=THEME_NAME` 参数，像这样：
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true&theme=radical)
 ```
 
 #### 所有现有主题
@@ -123,54 +120,14 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 
 > 缓存的注意事项: 如果 fork 数和 star 数 少于 1k , Repo 卡片默认缓存是 4 小时 （14400 秒） ，否则是 2 小时（7200）。另请注意缓存被限制为最短 2 小时，最长 24 小时。
 
-#### 统计卡片专属选项:
-
-- `hide` - 隐藏特定统计信息 _(以逗号分隔)_
-- `hide_title` - _(boolean)_
-- `hide_rank` - _(boolean)_
-- `show_icons` - _(boolean)_
-- `include_all_commits` - 统计总提交次数而不是仅统计今年的提交次数 _(boolean)_
-- `line_height` - 设置文本之间的行高 _(number)_
-
-#### Repo 卡片专属选项:
-
-- `show_owner` - 显示 Repo 的所有者名字 _(boolean)_
-
 #### 语言卡片专属选项:
 
 - `hide` - 从卡片中隐藏指定语言 _(Comma seperated values)_
 - `hide_title` - _(boolean)_
+- `show_icons` - _(boolean)_
 - `card_width` - 手动设置卡片的宽度 _(number)_
 
-> :warning: **重要:**
-> 如 [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding) 所指定，语言名称应使用 uri 转义。
-> (例: `c++` 应该是 `c%2B%2B`, `jupyter notebook` 应该是 `jupyter%20notebook`, 等.)
-
 ---
-
-# GitHub 更多置顶
-
-GitHub 更多置顶 允许你在使用 GitHub readme profile 时，在个人资料中置顶多于 6 个 repo 。
-
-是的！你不再受限于置顶最多 6 个存储库了。
-
-### 使用细则
-
-复制粘贴这段代码到你的 README 文件中，并更改链接。
-
-端点: `api/pin?username=anuraghazra&repo=github-readme-stats`
-
-```md
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
-```
-
-### Demo
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
-
-使用 [show_owner](#自定义) 变量将 Repo 所有者的用户名包含在内。
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats&show_owner=true)](https://github.com/anuraghazra/github-readme-stats)
 
 # 热门语言卡片
 
@@ -182,23 +139,15 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 
 将此代码复制粘贴到您的 `README.md` 文件中，并修改链接。
 
-端点: `api/top-langs?username=anuraghazra`
+端点: `api/?username=anuraghazra`
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
-```
-
-### 隐藏指定语言
-
-可以使用 `?hide=language1,language2` 参数来隐藏指定的语言。
-
-```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 ```
 
 ### Demo
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
@@ -206,41 +155,33 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 
 - 默认
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra)
 
 - 隐藏指定统计
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&hide=day,week)
 
 - 显示图标
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
-
-- 包含全部提交
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true)
 
 - 主题
 
 从[默认主题](#主题)中进行选择
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true&theme=radical)
 
 - 渐变
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
 - 自定义统计卡片
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
-
-- 自定义 repo 卡片
-
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
 - 热门语言
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
