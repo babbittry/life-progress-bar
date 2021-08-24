@@ -1,42 +1,20 @@
 <p align="center">
- <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">GitHub Readme Stats</h2>
- <p align="center">在你的 README 中获取动态生成的 GitHub 统计信息！</p>
+ <img width="100px" src="https://res.cloudinary.com/babbittry/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="Life Progress Bar" />
+ <h2 align="center">Life Progress Bar</h2>
+ <p align="center">在你的 GitHub 首页生成你的人生进度条！</p>
 </p>
-  <p align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats/actions">
-      <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
-    </a>
-    <a href="https://codecov.io/gh/anuraghazra/github-readme-stats">
-      <img src="https://codecov.io/gh/anuraghazra/github-readme-stats/branch/master/graph/badge.svg" />
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/anuraghazra/github-readme-stats?color=0088ff" />
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
-    </a>
-    <br />
-    <br />
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
-      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
-    </a>
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
-      <img src="https://img.shields.io/badge/Supported%20by-Node%20Cli.com%20%E2%86%92-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/>
-    </a>
-  </p>
 
   <p align="center">
     <a href="#demo">查看 Demo</a>
     ·
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">报告 Bug</a>
+    <a href="https://github.com/babbittry/life-progress-bar/issues/new/choose">报告 Bug</a>
     ·
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">请求增加功能</a>
+    <a href="https://github.com/babbittry/life-progress-bar/issues/new/choose">请求增加功能</a>
   </p>
   <p align="center">
-    <a href="readme.md">English</a>
+    <a href="/docs/readme_en.md">English</a>
     ·
-    <a href="/docs/readme_cn.md">简体中文</a>
+    <a href="readme.md">简体中文</a>
   </p>
 </p>
 
@@ -56,7 +34,7 @@
 更改 `?username=` 的值为你的 GitHub 用户名。
 
 ```md
-[![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 ```
 
 ### 隐藏指定统计
@@ -66,7 +44,7 @@
 > 选项：`&hide=day,week,month,year,lifetime`
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&hide=day,week)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&hide=day,week)
 ```
 
 ### 显示图标
@@ -74,7 +52,7 @@
 如果想要显示图标，你可以调用 `show_icons=true` 参数，像这样：
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true)
 ```
 
 ### 主题
@@ -84,14 +62,14 @@
 通过调用 `?theme=THEME_NAME` 参数，像这样：
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&theme=radical)
 ```
 
 #### 所有现有主题
 
 dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula
 
-<img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stat Themes" width="600px"/>
+<img src="https://res.cloudinary.com/babbittry/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stat Themes" width="600px"/>
 
 你可以预览[所有可用主题](../themes/README.md)或者签出[主题配置文件](../themes/index.js), 而且如果你喜欢, **你也可以贡献新的主题** :D
 
@@ -129,25 +107,23 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 
 ---
 
-# 热门语言卡片
+# 人生进度条卡片
 
-热门语言卡片显示了 GitHub 用户常用的编程语言。
-
-_注意：热门语言并不表示我的技能水平或类似的水平，它是用来衡量用户在 github 上拥有最多代码的语言的一项指标，它是 github-readme-stats 的新特性_
+_注意：人生进度条卡片并不表示你具体能活多少年，它是用平均寿命来衡量用户的期望寿命，并不负有任何医学、伦理上的责任。_
 
 ### 使用细则
 
 将此代码复制粘贴到您的 `README.md` 文件中，并修改链接。
 
-端点: `api/?username=anuraghazra`
+端点: `api/?username=babbittry`
 
 ```md
-[![Top Langs](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 ```
 
 ### Demo
 
-[![Top Langs](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 
 ---
 
@@ -155,33 +131,33 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 
 - 默认
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)
 
 - 隐藏指定进度条
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&hide=day,week)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&hide=day,week)
 
 - 显示图标
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true)
 
 - 主题
-
+ 
 从[默认主题](#主题)中进行选择
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&theme=radical)
 
 - 渐变
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
 - 自定义统计卡片
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
 - 热门语言
 
-[![Top Langs](https://life-progress-bar.vercel.app/api/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 
 ---
 
@@ -190,11 +166,11 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 你通常无法将图片靠边显示。为此，您可以使用以下方法：
 
 ```md
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+<a href="https://github.com/babbittry/life-progress-bar">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+<a href="https://github.com/babbittry/convoychat">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=babbittry&repo=convoychat" />
 </a>
 ```
 
@@ -204,9 +180,9 @@ _注意：热门语言并不表示我的技能水平或类似的水平，它是�
 
 因为 GitHub 的 API 每个小时只允许 5 千次请求，我的 `https://github-readme-stats.vercel.app/api` 很有可能会触发限制。如果你将其托管在自己的 Vercel 服务器上，那么你就不必为此担心。点击 deploy 按钮来开始你的部署！
 
-注意: 从 [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) 开始，我们应该能够处理超过 5 千次的请求，并且不会出现宕机问题 :D
+注意: 从 [#58](https://github.com/babbittry/life-progress-bar/pull/58) 开始，我们应该能够处理超过 5 千次的请求，并且不会出现宕机问题 :D
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/anuraghazra/github-readme-stats)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/babbittry/life-progress-bar)
 
 <details>
  <summary>设置 Vercel 的指导</summary>
