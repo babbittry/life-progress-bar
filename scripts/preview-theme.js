@@ -4,12 +4,12 @@ const parse = require("parse-diff");
 require("dotenv").config();
 
 function getPrNumber() {
-  const pullRequest = github.context.payload.pull_request;
-  if (!pullRequest) {
-    return undefined;
-  }
+    const pullRequest = github.context.payload.pull_request;
+    if (!pullRequest) {
+        return undefined;
+    }
 
-  return pullRequest.number;
+    return pullRequest.number;
 }
 
 const themeContribGuidelines = `
@@ -22,64 +22,64 @@ const themeContribGuidelines = `
 `;
 
 async function run() {
-  try {
-    const token = core.getInput("token");
-    const octokit = github.getOctokit(token || process.env.PERSONAL_TOKEN);
-    const pullRequestId = getPrNumber();
+    try {
+        const token = core.getInput("token");
+        const octokit = github.getOctokit(token || process.env.PERSONAL_TOKEN);
+        const pullRequestId = getPrNumber();
 
-    if (!pullRequestId) {
-      console.log("PR not found");
-      return;
-    }
+        if (!pullRequestId) {
+            console.log("PR not found");
+            return;
+        }
 
-    let res = await octokit.pulls.get({
-      owner: "anuraghazra",
-      repo: "github-readme-stats",
-      pull_number: pullRequestId,
-      mediaType: {
-        format: "diff",
-      },
-    });
+        let res = await octokit.pulls.get({
+            owner: "anuraghazra",
+            repo: "github-readme-stats",
+            pull_number: pullRequestId,
+            mediaType: {
+                format: "diff",
+            },
+        });
 
-    let diff = parse(res.data);
-    let colorStrings = diff
-      .find((file) => file.to === "themes/index.js")
-      .chunks[0].changes.filter((c) => c.type === "add")
-      .map((c) => c.content.replace("+", ""))
-      .join("");
+        let diff = parse(res.data);
+        let colorStrings = diff
+            .find((file) => file.to === "themes/index.js")
+            .chunks[0].changes.filter((c) => c.type === "add")
+            .map((c) => c.content.replace("+", ""))
+            .join("");
 
-    let matches = colorStrings.match(/(title_color:.*bg_color.*\")/);
-    let colors = matches && matches[0].split(",");
+        let matches = colorStrings.match(/(title_color:.*bg_color.*\")/);
+        let colors = matches && matches[0].split(",");
 
-    if (!colors) {
-      await octokit.issues.createComment({
-        owner: "anuraghazra",
-        repo: "github-readme-stats",
-        body: `
+        if (!colors) {
+            await octokit.issues.createComment({
+                owner: "anuraghazra",
+                repo: "github-readme-stats",
+                body: `
         \rTheme preview (bot)
         
         \rCannot create theme preview
 
         ${themeContribGuidelines}
         `,
-        issue_number: pullRequestId,
-      });
-      return;
-    }
-    colors = colors.map((color) =>
-      color.replace(/.*\:\s/, "").replace(/\"/g, ""),
-    );
+                issue_number: pullRequestId,
+            });
+            return;
+        }
+        colors = colors.map((color) =>
+            color.replace(/.*\:\s/, "").replace(/\"/g, ""),
+        );
 
-    const titleColor = colors[0];
-    const iconColor = colors[1];
-    const textColor = colors[2];
-    const bgColor = colors[3];
-    const url = `https://github-readme-stats.vercel.app/api?username=anuraghazra&title_color=${titleColor}&icon_color=${iconColor}&text_color=${textColor}&bg_color=${bgColor}&show_icons=true`;
+        const titleColor = colors[0];
+        const iconColor = colors[1];
+        const textColor = colors[2];
+        const bgColor = colors[3];
+        const url = `https://github-readme-stats.vercel.app/api?username=anuraghazra&title_color=${titleColor}&icon_color=${iconColor}&text_color=${textColor}&bg_color=${bgColor}&show_icons=true`;
 
-    await octokit.issues.createComment({
-      owner: "anuraghazra",
-      repo: "github-readme-stats",
-      body: `
+        await octokit.issues.createComment({
+            owner: "anuraghazra",
+            repo: "github-readme-stats",
+            body: `
       \rTheme preview (bot)  
       
       \ntitle_color: <code>#${titleColor}</code> | icon_color: <code>#${iconColor}</code> | text_color: <code>#${textColor}</code> | bg_color: <code>#${bgColor}</code>
@@ -90,11 +90,11 @@ async function run() {
       
       ${themeContribGuidelines}
       `,
-      issue_number: pullRequestId,
-    });
-  } catch (error) {
-    console.log(error);
-  }
+            issue_number: pullRequestId,
+        });
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 run();
