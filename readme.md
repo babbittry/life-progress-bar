@@ -27,43 +27,53 @@
 - [自定义](#自定义)
 - [自己部署](#自己部署)
 
-# GitHub 统计卡片
+# 人生进度条卡片
 
-将这行代码复制到你的 markdown 文件中，就是如此简单！
+_注意：人生进度条卡片并不表示你具体能活多少年，它是用平均寿命来衡量用户的期望寿命，并不负有任何医学、伦理上的责任。_
+
+## 使用细则
+
+将这行代码复制到你的 `README.md` 文件中，就是如此简单！
 
 更改 `?username=` 的值为你的 GitHub 用户名。
 
 ```md
-[![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
+[![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 ```
 
-### 隐藏指定统计
+### 隐藏指定项目
 
-想要隐藏指定统计信息，你可以调用参数 `?hide=`，其值用 `,` 分隔。
+想要隐藏指定项目信息，你可以调用参数 `?hide=`，其值用 `,` 分隔。
 
 > 选项：`&hide=day,week,month,year,lifetime`
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&hide=day,week)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&hide=day,week)
 ```
+
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&hide=day,week)
 
 ### 显示图标
 
 如果想要显示图标，你可以调用 `show_icons=true` 参数，像这样：
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true)
 ```
+
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true)
 
 ### 主题
 
-你可以通过现有的主题进行卡片个性化，省去[手动自定义](#自定义)的麻烦。
+你可以从[默认主题](#主题)中进行选择，对现有的主题进行卡片个性化，省去[手动自定义](#自定义)的麻烦。
 
 通过调用 `?theme=THEME_NAME` 参数，像这样：
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&theme=radical)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&theme=radical)
 ```
+
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&theme=radical)
 
 #### 所有现有主题
 
@@ -88,6 +98,9 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 - `cache_seconds` - 手动设置缓存头 _（最小值: 1800，最大值: 86400）_
 - `locale` - 在卡片中设置语言 _(例如 cn, de, es, 等等)_
 
+
+
+
 ##### bg_color 渐变
 
 你可以在 bg_color 选项中提供多个逗号分隔的值来呈现渐变，渐变的格式是 :-
@@ -107,57 +120,13 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 
 ---
 
-# 人生进度条卡片
-
-_注意：人生进度条卡片并不表示你具体能活多少年，它是用平均寿命来衡量用户的期望寿命，并不负有任何医学、伦理上的责任。_
-
-### 使用细则
-
-将此代码复制粘贴到您的 `README.md` 文件中，并修改链接。
-
-端点: `api/?username=babbittry`
-
-```md
-[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
-```
-
-### Demo
-
-[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
-
----
-
-### 全部 Demos
-
-- 默认
-
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)
-
-- 隐藏指定进度条
-
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&hide=day,week)
-
-- 显示图标
-
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true)
-
-- 主题
- 
-从[默认主题](#主题)中进行选择
-
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&theme=radical)
-
 - 渐变
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
 - 自定义统计卡片
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
-
-- 热门语言
-
-[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
 ---
 
@@ -179,8 +148,6 @@ _注意：人生进度条卡片并不表示你具体能活多少年，它是用�
 #### [Check Out Step By Step Video Tutorial By @codeSTACKr](https://youtu.be/n6d4KHSKqGk?t=107)
 
 因为 GitHub 的 API 每个小时只允许 5 千次请求，我的 `https://github-readme-stats.vercel.app/api` 很有可能会触发限制。如果你将其托管在自己的 Vercel 服务器上，那么你就不必为此担心。点击 deploy 按钮来开始你的部署！
-
-注意: 从 [#58](https://github.com/babbittry/life-progress-bar/pull/58) 开始，我们应该能够处理超过 5 千次的请求，并且不会出现宕机问题 :D
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/babbittry/life-progress-bar)
 
@@ -206,12 +173,6 @@ _注意：人生进度条卡片并不表示你具体能活多少年，它是用�
 </details>
 
 ---
-
-[![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
-
-
-
-
 
 ## TODO：
 
