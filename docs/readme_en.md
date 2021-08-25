@@ -35,7 +35,7 @@ Copy-paste this into your markdown content, and that's it. Simple!
 Change the `?username=` value to your GitHub's username.
 
 ```md
-[![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry)](https://github.com/babbittry/github-readme-stats)
+[![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 ```
 
 _Note: Available ranks are S+ (top 1%), S (top 25%), A++ (top 45%), A+ (top 60%), and B+ (everyone).
@@ -49,7 +49,7 @@ To hide any specific stats, you can pass a query parameter `?hide=` with comma-s
 > Options: `&hide=stars,commits,prs,issues,contribs`
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=contribs,prs)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=contribs,prs)
 ```
 
 
@@ -58,7 +58,7 @@ To hide any specific stats, you can pass a query parameter `?hide=` with comma-s
 To enable icons, you can pass `show_icons=true` in the query param, like so:
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true)
 ```
 
 ### Themes
@@ -68,7 +68,7 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `?theme=THEME_NAME` parameter like so :-
 
 ```md
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true&theme=radical)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes :-
@@ -146,30 +146,6 @@ You can provide multiple comma-separated values in bg_color option to render a g
 
 ---
 
-# GitHub Extra Pins
-
-GitHub extra pins allow you to pin more than 6 repositories in your profile using a GitHub readme profile.
-
-Yay! You are no longer limited to 6 pinned repositories.
-
-### Usage
-
-Copy-paste this code into your readme and change the links.
-
-Endpoint: `api/pin?username=babbittry&repo=github-readme-stats`
-
-```md
-[![Readme Card](https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats)](https://github.com/babbittry/github-readme-stats)
-```
-
-### Demo
-
-[![Readme Card](https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats)](https://github.com/babbittry/life-progress-bar)
-
-Use [show_owner](#customization) variable to include the repo's owner username
-
-[![Readme Card](https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats&show_owner=true)](https://github.com/babbittry/life-progress-bar)
-
 # Life Progress Bar
 
 _Note: The life progress bar card does not indicate how many years you can live. It uses the average life span to measure the life expectancy of the user, and does not bear any medical or ethical responsibility._
@@ -181,47 +157,30 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `?username=babbittry`
 
 ```md
-[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry)](https://github.com/babbittry/github-readme-stats)
-```
-
-```md
-[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry,babbittry.github.io)](https://github.com/babbittry/github-readme-stats)
-```
-
-### Hide individual languages
-
-You can use `?hide=language1,language2` parameter to hide individual languages.
-
-```md
-[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry&hide=javascript,html)](https://github.com/babbittry/life-progress-bar)
-```
-
-### Show more languages
-
-You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
-
-```md
-[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry&langs_count=8)](https://github.com/babbittry/github-readme-stats)
-```
-
-### Demo
-
 [![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
-
-
-# Wakatime Week Stats
-
-Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
+```
 
 ```md
-[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod)](https://github.com/babbittry/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry,babbittry.github.io)](https://github.com/babbittry/life-progress-bar)
 ```
+
+### Hide individual item
+
+You can use `?hide=day,week,month,year,lifetime` parameter to hide individual item.
+
+```md
+[![Top Langs](https://life-progress-bar.vercel.app/api?username=babbittry&hide=day,month)](https://github.com/babbittry/life-progress-bar)
+```
+
+[![Top Langs](https://life-progress-bar.vercel.app/api?username=babbittry&hide=day)](https://github.com/babbittry/life-progress-bar)
+
+https://life-progress-bar.vercel.app/api?username=babbittry&hide=week,day
 
 ### Demo
 
-[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod)](https://github.com/babbittry/life-progress-bar)
+[![Top Langs](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 
-[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/babbittry/life-progress-bar)
+https://github.com/babbittry/life-progress-bar)
 
 
 ---
@@ -230,53 +189,41 @@ Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
 
 - Default
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry)
 
 - Hiding specific stats
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=contribs,issues)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=week,day)
 
 - Showing icons
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=issues&show_icons=true)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=issues&show_icons=true)
 
 - Customize Border Color
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&border_color=2e4058)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&border_color=2e4058)
 
 - Include All Commits
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&include_all_commits=true)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&include_all_commits=true)
 
 - Themes
 
 Choose from any of the [default themes](#themes)
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true&theme=radical)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true&theme=radical)
 
 - Gradient
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
 - Customizing stats card
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
 - Setting card locale
 
-![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&locale=es)
-
-- Customizing repo card
-
-![Customized Card](https://life-progress-bar.vercel.app/api/pin?username=babbittry&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
-
-- Top languages
-
-[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
-
-- Wakatime card
-
-[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod)](https://github.com/babbittry/life-progress-bar)
+![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&locale=cn)
 
 ---
 
@@ -285,7 +232,7 @@ Choose from any of the [default themes](#themes)
 You usually won't be able to layout the images side by side. To do that you can use this approach:
 
 ```html
-<a href="https://github.com/babbittry/github-readme-stats">
+<a href="https://github.com/babbittry/life-progress-bar">
   <img align="center" src="https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats" />
 </a>
 <a href="https://github.com/babbittry/convoychat">

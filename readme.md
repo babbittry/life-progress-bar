@@ -37,6 +37,8 @@ _注意：人生进度条卡片并不表示你具体能活多少年，它是用�
 [![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 ```
 
+[![babbittry's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
+
 ### 隐藏指定项目
 
 想要隐藏指定项目信息，你可以调用参数 `?hide=`，其值用 `,` 分隔。
@@ -92,7 +94,7 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 - `hide_border` - 隐藏卡的边框 _(布尔值)_
 - `theme` - 主题名称，从[所有可用主题](../themes/README.md)中选择
 - `cache_seconds` - 手动设置缓存头 _（最小值: 1800，最大值: 86400）_
-- `locale` - 在卡片中设置语言 _(例如 cn, de, es, 等等)_
+- `locale` - 在卡片中设置语言 _(例如 cn, en)_
 
 #### bg_color 渐变
 
