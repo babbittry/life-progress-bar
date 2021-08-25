@@ -1,44 +1,20 @@
 <p align="center">
  <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">GitHub Readme Stats</h2>
- <p align="center">Get dynamically generated GitHub stats on your readmes!</p>
+ <h2 align="center">Life Progress Bar</h2>
+ <p align="center">Display life progress on your readmes!</p>
 </p>
-  <p align="center">
-    <a href="https://github.com/anuraghazra/github-readme-stats/actions">
-      <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
-    </a>
-    <a href="https://codecov.io/gh/anuraghazra/github-readme-stats">
-      <img src="https://codecov.io/gh/anuraghazra/github-readme-stats/branch/master/graph/badge.svg" />
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/anuraghazra/github-readme-stats?color=0088ff" />
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
-    </a>
-    <br />
-    <br />
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
-      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
-    </a>
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
-      <img src="https://img.shields.io/badge/Supported%20by-Node%20Cli.com%20%E2%86%92-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/>
-    </a>
-  </p>
   <p align="center">
     <a href="#demo">View Demo</a>
     ·
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/babbittry/life-progress-bar/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/babbittry/life-progress-bar/issues/new/choose">Request Feature</a>
   </p>
   <p align="center">
+    <a href="/docs/readme_en.md">English</a>
     ·
-    <a href="/docs/readme_cn.md">简体中文</a>
-    ·
+    <a href="readme.md">简体中文</a>
   </p>
-
-</p>
 
 
 
@@ -46,7 +22,7 @@
 
 - [GitHub Stats Card](#github-stats-card)
 - [GitHub Extra Pins](#github-extra-pins)
-- [Top Languages Card](#top-languages-card)
+- [Life Progress Bar](#Life Progress Bar)
 - [Wakatime Week Stats](#wakatime-week-stats)
 - [Themes](#themes)
 - [Customization](#customization)
@@ -59,7 +35,7 @@ Copy-paste this into your markdown content, and that's it. Simple!
 Change the `?username=` value to your GitHub's username.
 
 ```md
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry)](https://github.com/babbittry/github-readme-stats)
 ```
 
 _Note: Available ranks are S+ (top 1%), S (top 25%), A++ (top 45%), A+ (top 60%), and B+ (everyone).
@@ -73,7 +49,7 @@ To hide any specific stats, you can pass a query parameter `?hide=` with comma-s
 > Options: `&hide=stars,commits,prs,issues,contribs`
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,prs)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=contribs,prs)
 ```
 
 
@@ -82,7 +58,7 @@ To hide any specific stats, you can pass a query parameter `?hide=` with comma-s
 To enable icons, you can pass `show_icons=true` in the query param, like so:
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true)
 ```
 
 ### Themes
@@ -92,14 +68,14 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `?theme=THEME_NAME` parameter like so :-
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes :-
 
 dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula
 
-<img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stats Themes" width="600px"/>
+<img src="https://res.cloudinary.com/babbittry/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stats Themes" width="600px"/>
 
 You can look at a preview for [all available themes](./themes/README.md) or checkout the [theme config file](./themes/index.js) & **you can also contribute new themes** if you like :D
 
@@ -180,38 +156,36 @@ Yay! You are no longer limited to 6 pinned repositories.
 
 Copy-paste this code into your readme and change the links.
 
-Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
+Endpoint: `api/pin?username=babbittry&repo=github-readme-stats`
 
 ```md
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats)](https://github.com/babbittry/github-readme-stats)
 ```
 
 ### Demo
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats)](https://github.com/babbittry/life-progress-bar)
 
 Use [show_owner](#customization) variable to include the repo's owner username
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats&show_owner=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats&show_owner=true)](https://github.com/babbittry/life-progress-bar)
 
-# Top Languages Card
+# Life Progress Bar
 
-The top languages card show a GitHub user's most frequently used top language.
-
-_NOTE: Top Languages does not indicate my skill level or anything like that, it's a GitHub metric of which languages have the most code on GitHub. It's a new feature of github-readme-stats._
+_Note: The life progress bar card does not indicate how many years you can live. It uses the average life span to measure the life expectancy of the user, and does not bear any medical or ethical responsibility._
 
 ### Usage
 
 Copy-paste this code into your readme and change the links.
 
-Endpoint: `api/top-langs?username=anuraghazra`
+Endpoint: `?username=babbittry`
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry)](https://github.com/babbittry/github-readme-stats)
 ```
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra,anuraghazra.github.io)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry,babbittry.github.io)](https://github.com/babbittry/github-readme-stats)
 ```
 
 ### Hide individual languages
@@ -219,7 +193,7 @@ Endpoint: `api/top-langs?username=anuraghazra`
 You can use `?hide=language1,language2` parameter to hide individual languages.
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry&hide=javascript,html)](https://github.com/babbittry/life-progress-bar)
 ```
 
 ### Show more languages
@@ -227,12 +201,12 @@ You can use `?hide=language1,language2` parameter to hide individual languages.
 You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry&langs_count=8)](https://github.com/babbittry/github-readme-stats)
 ```
 
 ### Demo
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 
 
 # Wakatime Week Stats
@@ -240,14 +214,14 @@ You can use the `&langs_count=` option to increase or decrease the number of lan
 Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
 
 ```md
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
+[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod)](https://github.com/babbittry/github-readme-stats)
 ```
 
 ### Demo
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
+[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod)](https://github.com/babbittry/life-progress-bar)
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)
+[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/babbittry/life-progress-bar)
 
 
 ---
@@ -256,53 +230,53 @@ Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
 
 - Default
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry)
 
 - Hiding specific stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=contribs,issues)
 
 - Showing icons
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&hide=issues&show_icons=true)
 
 - Customize Border Color
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&border_color=2e4058)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&border_color=2e4058)
 
 - Include All Commits
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&include_all_commits=true)
 
 - Themes
 
 Choose from any of the [default themes](#themes)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&show_icons=true&theme=radical)
 
 - Gradient
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api?username=babbittry&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
 - Customizing stats card
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
 - Setting card locale
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&locale=es)
+![Anurag's GitHub stats](https://life-progress-bar.vercel.app/api/?username=babbittry&locale=es)
 
 - Customizing repo card
 
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
+![Customized Card](https://life-progress-bar.vercel.app/api/pin?username=babbittry&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
 - Top languages
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://life-progress-bar.vercel.app/api/top-langs/?username=babbittry)](https://github.com/babbittry/life-progress-bar)
 
 - Wakatime card
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
+[![willianrod's wakatime stats](https://life-progress-bar.vercel.app/api/wakatime?username=willianrod)](https://github.com/babbittry/life-progress-bar)
 
 ---
 
@@ -311,11 +285,11 @@ Choose from any of the [default themes](#themes)
 You usually won't be able to layout the images side by side. To do that you can use this approach:
 
 ```html
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+<a href="https://github.com/babbittry/github-readme-stats">
+  <img align="center" src="https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=github-readme-stats" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+<a href="https://github.com/babbittry/convoychat">
+  <img align="center" src="https://life-progress-bar.vercel.app/api/pin/?username=babbittry&repo=convoychat" />
 </a>
 ```
 
@@ -323,11 +297,11 @@ You usually won't be able to layout the images side by side. To do that you can 
 
 #### [Check Out Step By Step Video Tutorial By @codeSTACKr](https://youtu.be/n6d4KHSKqGk?t=107)
 
-Since the GitHub API only allows 5k requests per hour, my `https://github-readme-stats.vercel.app/api` could possibly hit the rate limiter. If you host it on your own Vercel server, then you don't have to worry about anything. Click on the deploy button to get started!
+Since the GitHub API only allows 5k requests per hour, my `https://life-progress-bar.vercel.app/api` could possibly hit the rate limiter. If you host it on your own Vercel server, then you don't have to worry about anything. Click on the deploy button to get started!
 
-NOTE: Since [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) we should be able to handle more than 5k requests and have no issues with downtime :D
+NOTE: Since [#58](https://github.com/babbittry/life-progress-bar/pull/58) we should be able to handle more than 5k requests and have no issues with downtime :D
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/anuraghazra/github-readme-stats)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/babbittry/life-progress-bar)
 
 <details>
  <summary><b> Guide on setting up Vercel  🔨 </b></summary>

@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="https://res.cloudinary.com/babbittry/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="Life Progress Bar" />
+ <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="Life Progress Bar" />
  <h2 align="center">Life Progress Bar</h2>
  <p align="center">在你的 GitHub 首页生成你的人生进度条！</p>
 </p>
@@ -16,8 +16,6 @@
     ·
     <a href="readme.md">简体中文</a>
   </p>
-</p>
-
 ## 目录
 
 - [人生进度条卡片](#人生进度条卡片)
