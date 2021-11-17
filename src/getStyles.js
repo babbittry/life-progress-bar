@@ -1,16 +1,16 @@
 const calculateCircleProgress = (value) => {
-  let radius = 40;
-  let c = Math.PI * (radius * 2);
+    let radius = 40;
+    let c = Math.PI * (radius * 2);
 
-  if (value < 0) value = 0;
-  if (value > 100) value = 100;
+    if (value < 0) value = 0;
+    if (value > 100) value = 100;
 
-  let percentage = ((100 - value) / 100) * c;
-  return percentage;
+    let percentage = ((100 - value) / 100) * c;
+    return percentage;
 };
 
 const getProgressAnimation = ({ progress }) => {
-  return `
+    return `
     @keyframes rankAnimation {
       from {
         stroke-dashoffset: ${calculateCircleProgress(0)};
@@ -23,7 +23,7 @@ const getProgressAnimation = ({ progress }) => {
 };
 
 const getAnimations = () => {
-  return `
+    return `
     /* Animations */
     @keyframes scaleInAnimation {
       from {
@@ -45,13 +45,13 @@ const getAnimations = () => {
 };
 
 const getStyles = ({
-  titleColor,
-  textColor,
-  iconColor,
-  show_icons,
-  progress,
+    titleColor,
+    textColor,
+    iconColor,
+    show_icons,
+    progress,
 }) => {
-  return `
+    return `
     .stat {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
     }
